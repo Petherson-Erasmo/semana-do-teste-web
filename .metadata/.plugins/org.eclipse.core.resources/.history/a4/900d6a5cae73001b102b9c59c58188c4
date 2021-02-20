@@ -1,0 +1,21 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+// import org.openqa.selenium.support.FindBy;
+
+public class Lista extends PageObject {
+	//@FindBy(xpath = "//h3[contains(text(),'Coleira Petz Azul para Cães')]") //Desta forma comentada é o jeito mais simples porém vai clicar sempre no mesmo texto.
+	//private WebElement prudutoDesejado; // Desta forma comentada é o jeito mais simples porém vai clicar sempre no mesmo texto.
+
+	public Lista(WebDriver driver) {
+		super(driver);		
+	}
+	public void clicarNoProduto(String produto) {
+		//prudutoDesejado.click(); // Desta forma comentada é o jeito mais simples porém vai clicar sempre no mesmo texto.
+		WebElement prudutoDesejado = driver.findElement(By.xpath("//h3[contains(text(),'" + produto + "')]"));
+		prudutoDesejado.click();
+	}
+	
+}

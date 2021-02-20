@@ -1,0 +1,7 @@
+#language: pt
+Funcionalidade: Comprar Produto
+		# Dado que acesso o site da da Petz
+		# Quando seleciono um produto e add no carrinho
+		# Então eu finalizo a compra
+		
+		Cenario: 
